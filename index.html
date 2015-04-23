@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width">
+	<title>Donations in Sport</title>
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+</head>
+<body>
+
+	<div id="container">
+<!-- 		<div class="city-container">
+			<div class="current-temp-container">
+				 <img src="broken.jpg"/>
+				<div class="current-temp-value">78</div>
+			</div>
+			<div class="name">CITY NAME</div>
+			<div class="average-temp">Average: 73</div>
+			<div class="temp-range">Low/high: 10 to 95</div>
+		</div> -->
+	</div>
+
+	<script id="sport-template" type="text/jst">
+		<div class="city-container">
+			<div class="amount-container">
+				<div class="amount-value"><%= accounting.formatMoney(amount, "$", 0) %></div>
+			</div>
+			<div class="sport"></div>
+			<div class="donated-how-many-times"># of Donations: <%= donated_how_many_times %></div>
+			<div class="athlete">Athlete: <%= athlete %></div>
+			<div class="donated-to">Party: <%= donated_to %></div>
+		</div>	
+	</script>
+
+
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/d3.v3.min.js"></script>
+	<script src="js/underscore-min.js"></script>
+	<script src="js/accounting.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
